@@ -3,20 +3,19 @@ package com.example.cryptoapp.pojo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 import com.google.gson.annotations.Expose
-
 import com.google.gson.annotations.SerializedName
 
 
-
-@Entity (tableName = "full_price_list")
+@Entity(tableName = "full_price_list")
 data class CoinPriceInfo (
+
     @SerializedName("TYPE")
     @Expose
-    val type: String? = null,
+    val type: String?,
 
     @SerializedName("MARKET")
     @Expose
-    val market: String? = null,
+    val market: String?,
 
     @PrimaryKey
     @SerializedName("FROMSYMBOL")
@@ -25,169 +24,177 @@ data class CoinPriceInfo (
 
     @SerializedName("TOSYMBOL")
     @Expose
-    val tosymbol: String? = null,
+    val tosymbol: String?,
 
     @SerializedName("FLAGS")
     @Expose
-    val flags: String? = null,
+    val flags: String?,
 
     @SerializedName("PRICE")
     @Expose
-    val price: Double? = null,
+    val price: String?,
 
     @SerializedName("LASTUPDATE")
     @Expose
-    val lastupdate: Int? = null,
+    val lastupdate: Long?,
 
     @SerializedName("MEDIAN")
     @Expose
-    val median: Int? = null,
+    val median: Int?,
 
     @SerializedName("LASTVOLUME")
     @Expose
-    val lastvolume: Double? = null,
+    val lastvolume: String?,
 
     @SerializedName("LASTVOLUMETO")
     @Expose
-    val lastvolumeto: Double? = null,
+    val lastvolumeto: String?,
 
     @SerializedName("LASTTRADEID")
     @Expose
-    val lasttradeid: String? = null,
+    val lasttradeid: String?,
 
     @SerializedName("VOLUMEDAY")
     @Expose
-    val volumeday: Double? = null,
+    val volumeday: String?,
 
     @SerializedName("VOLUMEDAYTO")
     @Expose
-    val volumedayto: Double? = null,
+    val volumedayto: String?,
 
     @SerializedName("VOLUME24HOUR")
     @Expose
-    val volume24hour: Double? = null,
+    val volume24hour: String?,
 
     @SerializedName("VOLUME24HOURTO")
     @Expose
-    val volume24hourto: Double? = null,
+    val volume24hourto: String?,
 
     @SerializedName("OPENDAY")
     @Expose
-    val openday: Double? = null,
+    val openday: String?,
 
     @SerializedName("HIGHDAY")
     @Expose
-    val highday: Double? = null,
+    val highday: String?,
 
     @SerializedName("LOWDAY")
     @Expose
-    val lowday: Double? = null,
+    val lowday: String?,
 
     @SerializedName("OPEN24HOUR")
     @Expose
-    val open24hour: Double? = null,
+    val open24hour: String?,
 
     @SerializedName("HIGH24HOUR")
     @Expose
-    val high24hour: Double? = null,
+    val high24hour: String?,
 
     @SerializedName("LOW24HOUR")
     @Expose
-    val low24hour: Double? = null,
+    val low24hour: String?,
 
     @SerializedName("LASTMARKET")
     @Expose
-    val lastmarket: String? = null,
+    val lastmarket: String?,
 
     @SerializedName("VOLUMEHOUR")
     @Expose
-    val volumehour: Double? = null,
+    val volumehour: String?,
 
     @SerializedName("VOLUMEHOURTO")
     @Expose
-    val volumehourto: Double? = null,
+    val volumehourto: String?,
 
     @SerializedName("OPENHOUR")
     @Expose
-    val openhour: Double? = null,
+    val openhour: String?,
 
     @SerializedName("HIGHHOUR")
     @Expose
-    val highhour: Double? = null,
+    val highhour: String?,
 
     @SerializedName("LOWHOUR")
     @Expose
-    val lowhour: Double? = null,
+    val lowhour: String?,
 
     @SerializedName("TOPTIERVOLUME24HOUR")
     @Expose
-    val toptiervolume24hour: Double? = null,
+    val toptiervolume24hour: String?,
 
     @SerializedName("TOPTIERVOLUME24HOURTO")
     @Expose
-    val toptiervolume24hourto: Double? = null,
+    val toptiervolume24hourto: String?,
 
     @SerializedName("CHANGE24HOUR")
     @Expose
-    val change24hour: Double? = null,
+    val change24hour: String?,
 
     @SerializedName("CHANGEPCT24HOUR")
     @Expose
-    val changepct24hour: Double? = null,
+    val changepct24hour: String?,
 
     @SerializedName("CHANGEDAY")
     @Expose
-    val changeday: Double? = null,
+    val changeday: String?,
 
     @SerializedName("CHANGEPCTDAY")
     @Expose
-    val changepctday: Double? = null,
+    val changepctday: String?,
 
     @SerializedName("CHANGEHOUR")
     @Expose
-    val changehour: Double? = null,
+    val changehour: String?,
 
     @SerializedName("CHANGEPCTHOUR")
     @Expose
-    val changepcthour: Double? = null,
+    val changepcthour: String?,
 
     @SerializedName("CONVERSIONTYPE")
     @Expose
-    val conversiontype: String? = null,
+    val conversiontype: String?,
 
     @SerializedName("CONVERSIONSYMBOL")
     @Expose
-    val conversionsymbol: String? = null,
+    val conversionsymbol: String?,
 
     @SerializedName("SUPPLY")
     @Expose
-    val supply: Int? = null,
+    val supply: String?,
 
     @SerializedName("MKTCAP")
     @Expose
-    val mktcap: Double? = null,
+    val mktcap: String?,
 
     @SerializedName("MKTCAPPENALTY")
     @Expose
-    val mktcappenalty: Int? = null,
+    val mktcappenalty: String?,
 
     @SerializedName("TOTALVOLUME24H")
     @Expose
-    val totalvolume24h: Double? = null,
+    val totalvolume24h: String?,
 
     @SerializedName("TOTALVOLUME24HTO")
     @Expose
-    val totalvolume24hto: Double? = null,
+    val totalvolume24hto: String?,
 
     @SerializedName("TOTALTOPTIERVOLUME24H")
     @Expose
-    val totaltoptiervolume24h: Double? = null,
+    val totaltoptiervolume24h: String?,
 
     @SerializedName("TOTALTOPTIERVOLUME24HTO")
     @Expose
-    val totaltoptiervolume24hto: Double? = null,
+    val totaltoptiervolume24hto: String?,
 
     @SerializedName("IMAGEURL")
     @Expose
-    val imageurl: String? = null
-    )
+    val imageurl: String?
+   )
+//{
+//////    fun getFormattedTime(): String {
+//////        return convertTimestampToTime(lastupdate)
+//////    }
+//////    fun getFullImageUrl(): String {
+//////        return BASE_IMAGE_URL + imageurl
+//////    }
+////}

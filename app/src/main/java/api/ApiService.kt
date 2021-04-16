@@ -6,6 +6,7 @@ import io.reactivex.Single
 import retrofit2.http.GET
 import retrofit2.http.Query
 
+
 interface ApiService {
 
     @GET("top/totalvolfull")
@@ -13,7 +14,7 @@ interface ApiService {
         @Query(QUERY_PARAM_APY_KEY) apiKey: String = "d3a08d2b3164b406e96da59d14b0b833da79d6afac7a53a137c665420e4b4238",
         @Query(QUERY_PARAM_LIMIT) limit: Int = 10,
         @Query(QUERY_PARAM_TO_SYMBOL) tSym: String = CURRENCY
-    ): Single <CoinInfoListOfData>
+    ): Single<CoinInfoListOfData>
 
     @GET("pricemultifull")
     fun getFullPriceList(
