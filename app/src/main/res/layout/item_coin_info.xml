@@ -18,45 +18,45 @@
             android:layout_margin="8dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:scr="@mipmap/ic_launcher" />
+            tools:src="@mipmap/ic_launcher" />
 
         <TextView
             android:id="@+id/tvSymbols"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="16dp"
-            android:textColor="@color/black"
+            android:textColor="#000"
             android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@id/tvPrice"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:text= "BTC / USD" />
+            tools:text="BTC / USD" />
 
         <TextView
             android:id="@+id/tvPrice"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="16dp"
-            android:textColor="@color/black"
+            android:textColor="#000"
             android:textSize="24sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:text="7500.52"  />
+            tools:text="7500.52" />
 
         <TextView
             android:id="@+id/tvLastUpdate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="16dp"
-            android:textColor="@color/black"
+            android:textColor="#000"
             android:textSize="14sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             tools:text="Время последнего обновления: 21:52:33" />
-
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
