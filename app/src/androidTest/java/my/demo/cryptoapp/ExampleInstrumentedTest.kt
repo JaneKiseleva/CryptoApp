@@ -1,4 +1,4 @@
-package com.example.cryptoapp
+package my.demo.cryptoapp
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

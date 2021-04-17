@@ -1,4 +1,4 @@
-package com.example.cryptoapp.pojo
+package my.demo.cryptoapp.pojo
 
 
 

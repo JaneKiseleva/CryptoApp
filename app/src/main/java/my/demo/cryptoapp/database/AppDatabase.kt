@@ -1,13 +1,10 @@
-package com.example.cryptoapp.database
+package my.demo.cryptoapp.database
 
 import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
-import androidx.room.migration.Migration
-import androidx.sqlite.db.SupportSQLiteDatabase
-import com.example.cryptoapp.pojo.CoinPriceInfo
-import kotlin.coroutines.coroutineContext
+import my.demo.cryptoapp.pojo.CoinPriceInfo
 
 
 @Database(entities = [CoinPriceInfo::class], version = 1, exportSchema = false)
@@ -26,7 +23,7 @@ abstract class AppDatabase : RoomDatabase() {
                     Room.databaseBuilder(
                         context,
                         AppDatabase::class.java,
-                        DB_NAME
+                            DB_NAME
                     ).build()
                 db = instance
                 return instance
